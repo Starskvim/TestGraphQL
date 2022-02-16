@@ -1,5 +1,6 @@
 package com.example.testgraphql.entities;
 
+import io.leangen.graphql.annotations.GraphQLQuery;
 import lombok.Getter;
 import lombok.Setter;
 

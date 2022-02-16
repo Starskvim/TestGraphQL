@@ -7,5 +7,5 @@ import java.util.List;
 public interface AnimalService {
     List<Animal> getAllAnimal();
     Animal getAnimal(long id);
-    Animal createAnimal(String title, Integer author, String type);
+    Animal createAnimal(Animal animal);
 }
