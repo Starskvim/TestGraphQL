@@ -1,5 +1,6 @@
 package com.example.testgraphql.entities;
 
+import io.leangen.graphql.annotations.GraphQLComplexity;
 import io.leangen.graphql.annotations.GraphQLQuery;
 import lombok.Getter;
 import lombok.Setter;
@@ -19,7 +20,9 @@ public class Animal {
     private String animalName;
     private Integer weight;
     private String type;
+
     @Column(name = "created_date", columnDefinition = "TIMESTAMP")
+    @GraphQLComplexity("10")
     private LocalDate createdDate;
 
     @Override
